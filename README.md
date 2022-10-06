@@ -1,6 +1,6 @@
 ## Hoyolab Auto Log-in
 ![daily check-in image](https://webstatic.hoyoverse.com/upload/event/2022/09/23/1a751d47bad26715b462b1b48b68e020_6420363701572222915.png)
-### _tool ini berfungsi untuk log-in hoyolab untuk game genshin dan honkai berdasarkan repo github [Genshin Automation](https://github.com/Sergiy3013/genshin_automation)_
+### _tool ini berfungsi untuk log-in hoyolab untuk game keluaran dari mihoyo a.k.a Hoyoverse, script ini dibangun berdasarkan repo github [Genshin Automation](https://github.com/Sergiy3013/genshin_automation)_
 
 > menggunakan tools ini **resiko di tanggung sendiri**. _pembuat tools ini tidak menyimpan data cookie kalian sama sekali_
 
