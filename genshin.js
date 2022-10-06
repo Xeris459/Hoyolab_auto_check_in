@@ -12,7 +12,9 @@ async function GenshinRequest(cookie) {
 	await DailySigned(cookie);
 	const data2 = await checkDailyNotSigned(cookie);
 
-	console.log(`your sign in is success, your total sign in is ${data.total_sign_day}`);
+	if (data2.total_sign_day == data.total_sign_day) return console.log(`failed to sigh in, because traveler already sign`);
+
+	console.log(`your sign in is success, your total sign in is ${data2.sign_cnt}`);
 }
 
 async function checkDailyNotSigned(cookie) {
@@ -48,7 +50,7 @@ async function checkDailyNotSigned(cookie) {
 
 async function DailySigned(cookie) {
 	try {
-		const response = await fetch(`https://sg-public-api.hoyolab.com/event/mani/sign?lang=en-us`, {
+		const response = await fetch(`https://sg-hk4e-api.hoyolab.com/event/sol/sign?lang=en-us`, {
 			headers: {
 				accept: "application/json, text/plain, */*",
 				"accept-language": "en-US,en;q=0.9",
@@ -61,7 +63,7 @@ async function DailySigned(cookie) {
 				"x-rpc-language": "en-us",
 				cookie: `${cookie}`,
 			},
-			body: '{"act_id":"e202110291205111"}',
+			body: `{"act_id":"${ACT_ID}"}`,
 			referrer: "https://www.hoyolab.com/",
 			referrerPolicy: "strict-origin-when-cross-origin",
 			method: "POST",
@@ -70,10 +72,7 @@ async function DailySigned(cookie) {
 
 		const data = await response.json();
 		if (data.data == null) throw data.message;
-		console.log(data);
-		// return data.data.is_sign;
 	} catch (error) {
 		console.log("check info failed with error: " + error);
-		return false;
 	}
 }
