@@ -63,7 +63,7 @@ async function DailySigned(cookie) {
 				"x-rpc-language": "en-us",
 				cookie: `${cookie}`,
 			},
-			body: '{"act_id":"e202110291205111"}',
+			body: `{"act_id":"${ACT_ID}"}`,
 			referrer: "https://www.hoyolab.com/",
 			referrerPolicy: "strict-origin-when-cross-origin",
 			method: "POST",
