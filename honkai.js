@@ -12,7 +12,9 @@ async function hi3Request(cookie) {
 	await DailySigned(cookie);
 	const data2 = await checkDailyNotSigned(cookie);
 
-	console.log(`your sign in is success, your total sign in is ${data.total_sign_day}`);
+	if (data2.total_sign_day == data.total_sign_day) return console.log(`failed to sigh in, because captain already sign`);
+
+	console.log(`your sign in is success, your total sign in is ${data2.total_sign_day}`);
 }
 
 async function checkDailyNotSigned(cookie) {
