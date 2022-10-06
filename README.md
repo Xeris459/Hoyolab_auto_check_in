@@ -23,11 +23,11 @@
 
 :bangbang: Anda harus memperbarui Github Action Setiap 35 hari
 ## Hoyolab Daily Check-in Support
-| Nama Game | Status |
-|--|--|
-| Genshin Impact |:construction: |
-| Honkai Impact 3rd | :white_check_mark: |
-| Tears of Themis | :x: |
-| Honkai: Star Rail | :x: |
-| Zenles Zone Zero | :x: |
-| Gun Girl Z | :hammer::moyai: |
+| Nama Game | Status | Test |
+|--|--|--|
+| Genshin Impact |:white_check_mark: | Success |
+| Honkai Impact 3rd | :white_check_mark: | Success |
+| Tears of Themis | :white_check_mark: | Not tested |
+| Honkai: Star Rail | :x: | Game Belum Rilis |
+| Zenles Zone Zero | :x: | Game Belum Rilis |
+| Gun Girl Z | :hammer::moyai: | Game Coid di global dan sea |
