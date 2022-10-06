@@ -1,6 +1,6 @@
 ## Hoyolab Auto Log-in
 
-### _tool ini berfungsi untuk log-in hoyolab untuk game genshin dan honkai berdasarkan repo github [Genshin Automation](https://github.com/Sergiy3013/genshin_automation)_
+### _tool ini berfungsi untuk log-in hoyolab untuk game genshin dan honkai berdasarkan repo github [Genshin Automation](https://github.com/Sergiy3013/genshin_automation) yang di persingkat_
 
 ## Cara menggunakannya
  1. fork repository ini
