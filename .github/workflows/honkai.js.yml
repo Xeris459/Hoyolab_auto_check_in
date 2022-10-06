@@ -23,4 +23,3 @@ jobs:
       run: node honkai.js
       env:
         HOYOLAB_COOKIE: ${{ secrets.HOYOLAB_COOKIE }}
-        HOYOLAB_COOKIES: ${{ secrets.HOYOLAB_COOKIES }}
